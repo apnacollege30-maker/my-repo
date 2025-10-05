@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.dark button {
+  background-color: #444;
+}
+
+.cards {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 260px;
+  margin: 10px auto;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: black;
+}
+
+.dark .card {
+  background-color: #333;
+  color: white;
+}
+
+.delete {
+  background-color: red;
+  margin-top: 10px;
+}
+
+.delete:hover {
+  background-color: darkred;
+}
+
+.empty {
+  margin-top: 30px;
+  font-style: italic;
+  color: gray;
+}
